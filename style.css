@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background: #0c111b;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: #0c111b;
+    padding: 0 4%;
+}
+.logo{
+    width: 115px;
+    height: 45px;
+}
+.nav-links{
+   display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+.nav-items a{
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    opacity: 9;
+}
+.kid-icon{
+    width: 40px;
+    height: 15px;
+}
+.right-container{
+    display: block;
+    margin-left: auto;
+}
+.searchBox{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+    outline: none;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    height: 30px;
+    font-weight: 500;
+    transition: 0.5s;
+    color: #fff;
+}
+.searchBox:focus{
+    width: 400px;
+    border-color: #1f80ce;
+}
+.sub-btn{
+    background: #1f80ce;
+    height: 30px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 10px;
+    border-radius: 6px;
+}
+.login{
+    color: #fff;
+    opacity: 0.9;
+    text-transform: uppercase;
+    margin-top: 80px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.title{
+    margin-top: 10rem;
+}
+
+
+
+
+
+/*------------carousel-----------------*/
+.carousel-container{
+    position: relative;
+    width: 100%;
+    height:450px;
+    padding: 20px 0;
+    overflow-x: hidden;
+    margin-top: 80px;
+}
+.carousel{
+    display: flex;
+    width: 92%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    background: #000;
+}
+.slider{
+    flex: 0 0 auto;
+    margin-right: 30px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+.slider img{
+    width: 70%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+}
+.slider-content{
+    position: absolute;
+    width: 50%;
+    color: #fff;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to right, #030b17 80%, #0c11b000);
+}
+.movie-title{
+    padding-left: 50px;
+    text-transform: capitalize;
+    margin-top:80px;
+    font-size: 26px;
+}
+.movie-des{
+    width: 80%;
+    line-height: 30px;
+    padding-left: 50px;
+    margin-top: 30px;
+    opacity: 0.8;
+    
+}
+
+
+/*------------carousel-----------------*/
+
+
+/*------------Video card-----------------*/
+.video-card-container{
+    position:relative;
+    width: 92%;
+    margin: auto;
+    height: 10vw;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.video-card{
+    position: relative;
+    min-width: calc(100%/5 - 10px);
+    width: calc(100%/5 - 10px);
+    height: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #030b17;
+}
+
+.video-card-image,
+.card-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-video{
+    position: absolute;
+}
+.video-card:hover .video-card-image{
+    display: none;
+}
+
+
+
+/*------------Video card-----------------*/
+
+.title{
+    color: #fff;
+    opacity: 0.9;
+    padding: 4%;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.movie-list{
+    width: 100%;
+    height: 22px;
+    position: relative;
+    margin: 10px 0 20px;
+    
+}
+.card-container{
+    position: absolute;
+    width: 92%;
+    align-items: center;
+    padding-left: 4%;
+    height: 220px;
+    display: flex;
+    margin: auto;
+    overflow-y: visible;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    position: relative;
+    min-width: 150px;
+    width: 150px;
+    height: 200px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-right: 10px;
+    transition: 0.5s;
+    background: #030b17;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card:hover .card-body:hover{
+    opacity: 1;
+}
+.card-body{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+    padding: 10px;
+    transition: 0.5s;
+}
+.name{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 60%;
+}
+.des{
+    color: #fff;
+    opacity: 0.8;
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 12px;
+}
+.watch-list{
+    position: absolute;
+    width: 100%;
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255, 0.5);
+    padding: 10px 5px;
+    cursor: pointer;
+    text-align: right;
+    font-weight: 500;
+    margin: 5px -21px;
+    border-radius: 6px;
+}
+.watch-list::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 12px;
+    height: 35px;
+    width: 35px;
+    background-image: url(images/add.png);
+    background-size: cover;
+    transform: scale(0.4);
+}
+
+.watch-list:hover{
+    color: #fff;
+}
+
+.pre-btn, .next-btn{
+    position: absolute;
+    top: 0;
+    
+    width: 5%;
+    height: 100%;
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+}
+.pre-btn{
+    left: 0;
+    background: linear-gradient(to right, #0c111b 0%, #0c111b);
+}
+.next-btn{
+    right: 0;
+    background: linear-gradient(to right, #0c111b 0%, #0c111b);
+}
+.pre-btn img,
+.next-btn img{
+    width: 15px;
+    height: 20px;
+    opacity: 0;
+}
+.pre-btn:hover img,
+.next-btn:hover img{
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 720px){
+    .searchBox{
+        display: none;
+    }
+    
+    .sub-btn{
+        background: #1f80ce;
+        height: 30px;
+        padding: 0 20px;
+        border: none;
+        outline: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 10px;
+        font-weight: 700;
+        margin: 0 10px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
